@@ -1,0 +1,153 @@
+body{
+    background-color: #E5E5E5;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.all-content{
+    position: absolute;
+}
+
+.top-menu{
+    position: fixed;
+    top: 0;
+    color: #FFFFFF;
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+}
+.name-logo{
+    padding: 10px;
+    padding-left: 20px;
+}
+.name-logo h1{
+    font-size: 44px;
+}
+.name-logo h2{
+    font-size: 18px;
+}
+.content-products{
+    margin-top: 122px;
+    margin-left: 15px;
+    margin-bottom: 122px;
+}
+.subtitle{
+    font-size: 26px;
+}
+
+.choices-of-foods{
+    display: flex;
+    width: 400px;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+.food{
+    background-color: #FFFFFF;
+    display:block;
+    padding: 15px;
+    border-radius: 9px;
+    width: 144px;
+    margin-right: 15px;
+}
+.food h2{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.description{
+    color: #A6A6A6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.price{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.main-drink{
+    margin-top: 30px;
+}
+.choices-of-drinks{
+    display: flex;
+    width: 394px;
+    overflow-x: auto;
+    margin-top: 20px;
+
+}
+.drink{
+    background-color: #FFFFFF;
+    display:block;
+    padding: 15px;
+    border-radius: 9px;
+    width: 144px;
+    margin-right: 15px;
+}
+.drink h2{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.main-dessert{
+    margin-top: 30px;
+}
+.choices-of-dessert{
+    display: flex;
+    width: 394px;
+    overflow-x: auto;
+    margin-top: 20px;
+
+}
+.dessert{
+    background-color: #FFFFFF;
+    display:block;
+    padding: 15px;
+    border-radius: 9px;
+    width: 144px;
+    margin-right: 15px;
+}
+.dessert h2{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.confirm-ordered{
+    background-color: #FFFFFF;
+    height: 92px;
+    width: 414px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+button{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #CBCBCB;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+}
