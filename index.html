@@ -16,10 +16,10 @@
     <div class="finish-order">
         <div class="align">
             <div class="confirm-order">
-                <div class="close-window">
+                <div onclick="click_button()" class="close-window">
                     <img src="./Assets/close-outline.svg">
                 </div>
-                <div class="window-confirm">
+                <div data-test="confirm-order-modal" class="window-confirm">
                     <div class="title-order">
                         <h1>Confirme seu pedido</h1>
                     </div>
@@ -49,9 +49,9 @@
 
                     <div class="options">
                         
-                        <button onclick="set_values()" class="all-right-confirm">Tudo certo, pode pedir!</button>
+                        <button data-test="confirm-order-btn" onclick="set_values()" class="all-right-confirm">Tudo certo, pode pedir!</button>
 
-                        <div onclick="click_button()" class="cancel">
+                        <div data-test="cancel-order-btn" onclick="click_button()" class="cancel">
                             Cancelar
                         </div>
                     </div>
@@ -74,14 +74,14 @@
                 <h1 class="subtitle">Primeiro, seu prato</h1>
                 <div class="foods">
                     
-                    <div onclick="select('.foods', '.food-1')" class="food food-1">
+                    <div data-test="dish" onclick="select('.foods', '.food-1')" class="food food-1">
                         <img src="./Assets/frango_yin_yang.png">
                         <div>
-                            <h2>Frango Yin Yang</h2>
+                            <h2 data-test="item-name">Frango Yin Yang</h2>
                             <p class="description">Um pouco de batata, um pouco de salada</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">14,90</p>
+                                    <p data-test="item-price" class="price main">14,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -91,14 +91,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.foods', '.food-2')" class="food food-2">
+                    <div data-test="dish" onclick="select('.foods', '.food-2')" class="food food-2">
                         <img src="./Assets/escondidinho.jpeg">
                         <div>
-                            <h2>Escondidinho de carne moída</h2>
+                            <h2 data-test="item-name">Escondidinho de carne moída</h2>
                             <p class="description">Hahaha, te achei</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">20,90</p>
+                                    <p data-test="item-price" class="price main">20,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -108,14 +108,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.foods', '.food-3')" class="food food-3">
+                    <div data-test="dish" onclick="select('.foods', '.food-3')" class="food food-3">
                         <img src="./Assets/lasanha.jpeg">
                         <div>
-                            <h2>Lasanha de Carne</h2>
+                            <h2 data-test="item-name">Lasanha de Carne</h2>
                             <p class="description">Uma lasanha gostosa pra você</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">13,90</p>
+                                    <p data-test="item-price" class="price main">13,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -125,14 +125,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.foods', '.food-4')" class="food food-4">
+                    <div data-test="dish" onclick="select('.foods', '.food-4')" class="food food-4">
                         <img src="./Assets/feijoada.jpeg">
                         <div>
-                            <h2>Feijoada Caprichada</h2>
+                            <h2 data-test="item-name">Feijoada Caprichada</h2>
                             <p class="description">O clássico dos brasileiros</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">17,90</p>
+                                    <p data-test="item-price" class="price main">17,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -142,14 +142,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.foods', '.food-5')" class="food food-5">
+                    <div data-test="dish" onclick="select('.foods', '.food-5')" class="food food-5">
                         <img src="./Assets/strogonoff de frango.webp">
                         <div>
-                            <h2>Strogonof de Frango</h2>
+                            <h2 data-test="item-name">Strogonof de Frango</h2>
                             <p class="description">Rapaz, eu comprava, parece ser bom</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">12,90</p>
+                                    <p data-test="item-price" class="price main">12,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -159,14 +159,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.foods', '.food-6')" class="food food-6">
+                    <div data-test="dish" onclick="select('.foods', '.food-6')" class="food food-6">
                         <img src="./Assets/churrasco-e-acompanhamentos.jpg">
                         <div>
-                            <h2>Churrasco e Acompanhamentos</h2>
+                            <h2 data-test="item-name">Churrasco e Acompanhamentos</h2>
                             <p class="description">Vai um churras ae, consagra?</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">32,90</p>
+                                    <p data-test="item-price" class="price main">32,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -176,14 +176,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.foods', '.food-7')" class="food food-7">
+                    <div data-test="dish" onclick="select('.foods', '.food-7')" class="food food-7">
                         <img src="./Assets/peixe grelhado.jpg">
                         <div>
-                            <h2>Peixe Grelhado</h2>
+                            <h2 data-test="item-name">Peixe Grelhado</h2>
                             <p class="description">Peixinho grelhado e tudo que há de bom</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main">13,90</p>
+                                    <p data-test="item-price" class="price main">13,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -200,14 +200,14 @@
                 <h1 class="subtitle">Agora, sua bebida</h1>
                 <div class="drinks">
 
-                    <div onclick="select('.drinks', '.drink-1')" class="drink drink-1">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-1')" class="drink drink-1">
                         <img src="./Assets/coca-cola.png">
                         <div class="content">
-                            <h2>Coquinha gelada</h2>
+                            <h2 data-test="item-name">Coquinha gelada</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">4,90</p>
+                                    <p data-test="item-price" class="price main coca">4,90</p>
                                 </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify-drink">
@@ -217,14 +217,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.drinks', '.drink-2')" class="drink drink-2">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-2')" class="drink drink-2">
                         <img src="./Assets/agua tonica.jpeg">
                         <div>
-                            <h2>Água Tônica</h2>
+                            <h2 data-test="item-name">Água Tônica</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">6,90</p>
+                                    <p data-test="item-price" class="price main coca">6,90</p>
                                 </div>
                             
                                 <div class="check">
@@ -236,14 +236,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.drinks', '.drink-3')" class="drink drink-3">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-3')" class="drink drink-3">
                         <img src="./Assets/fanta.webp">
                         <div>
-                            <h2>Fanta Laranja</h2>
+                            <h2 data-test="item-name">Fanta Laranja</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">5,90</p>
+                                    <p data-test="item-price" class="price main coca">5,90</p>
                                 </div>
                             
                                 <div class="check">
@@ -254,14 +254,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.drinks', '.drink-4')" class="drink drink-4">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-4')" class="drink drink-4">
                         <img src="./Assets/pepsi.webp">
                         <div>
-                            <h2>Pepsi</h2>
+                            <h2 data-test="item-name">Pepsi</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">5,90</p>
+                                    <p data-test="item-price" class="price main coca">5,90</p>
                                 </div>
                             
                                 <div class="check">
@@ -272,14 +272,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.drinks', '.drink-5')" class="drink drink-5">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-5')" class="drink drink-5">
                         <img src="./Assets/guarana.webp">
                         <div>
-                            <h2>Guaraná Antarctica</h2>
+                            <h2 data-test="item-name">Guaraná Antarctica</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">7,90</p>
+                                    <p data-test="item-price" class="price main coca">7,90</p>
                                 </div>
                             
                                 <div class="check">
@@ -290,14 +290,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.drinks', '.drink-6')" class="drink drink-6">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-6')" class="drink drink-6">
                         <img src="./Assets/Suco-de-laranja.jpg">
                         <div>
-                            <h2>Suco de Laranja</h2>
+                            <h2 data-test="item-name">Suco de Laranja</h2>
                             <p class="description">Copo 300ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">3,90</p>
+                                    <p data-test="item-price" class="price main coca">3,90</p>
                                 </div>
                             
                                 <div class="check">
@@ -308,14 +308,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.drinks', '.drink-7')" class="drink drink-7">
+                    <div data-test="drink" onclick="select('.drinks', '.drink-7')" class="drink drink-7">
                         <img src="./Assets/suco de maracuja.jpg">
                         <div>
-                            <h2>Suco de Maracuja</h2>
+                            <h2 data-test="item-name">Suco de Maracuja</h2>
                             <p class="description">Z..z..z sonin<br>Copo 300ml</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main coca">4,90</p>
+                                    <p data-test="item-price" class="price main coca">4,90</p>
                                 </div>
                             
                                 <div class="check">
@@ -333,14 +333,14 @@
                 <h1 class="subtitle">Por fim, sua sobremesa</h1>
                 <div class="desserts">
 
-                    <div onclick="select('.desserts', '.dessert-1')" class="dessert dessert-1">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-1')" class="dessert dessert-1">
                         <img src="./Assets/pudim.png">
                         <div>
-                            <h2>Pudim</h2>
+                            <h2 data-test="item-name">Pudim</h2>
                             <p class="description">Apenas pudim</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">7,90</p>
+                                    <p data-test="item-price" class="price main pudim">7,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -351,14 +351,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.desserts', '.dessert-2')" class="dessert dessert-2">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-2')" class="dessert dessert-2">
                         <img src="./Assets/brownie.jpeg">
                         <div>
-                            <h2>Brownie De Chocolate</h2>
+                            <h2 data-test="item-name">Brownie De Chocolate</h2>
                             <p class="description">Gostosão</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">9,90</p>
+                                    <p data-test="item-price" class="price main pudim">9,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -369,14 +369,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.desserts', '.dessert-3')" class="dessert dessert-3">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-3')" class="dessert dessert-3">
                         <img src="./Assets/flan.jpg">
                         <div>
-                            <h2>Flan De Chocolate</h2>
+                            <h2 data-test="item-name">Flan De Chocolate</h2>
                             <p class="description">Flan flan</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">11,90</p>
+                                    <p data-test="item-price" class="price main pudim">11,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -387,14 +387,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.desserts', '.dessert-4')" class="dessert dessert-4">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-4')" class="dessert dessert-4">
                         <img src="./Assets/pave-de-chocolate.jpg">
                         <div>
-                            <h2>Pavê De Chocolate</h2>
+                            <h2 data-test="item-name">Pavê De Chocolate</h2>
                             <p class="description">É pavê ou pacomê?</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">8,90</p>
+                                    <p  data-test="item-price"class="price main pudim">8,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -405,14 +405,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.desserts', '.dessert-5')" class="dessert dessert-5">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-5')" class="dessert dessert-5">
                         <img src="./Assets/sorvete.jpeg">
                         <div>
-                            <h2>Sorvete</h2>
+                            <h2 data-test="item-name">Sorvete</h2>
                             <p class="description">Sabores variados</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">5,90</p>
+                                    <p data-test="item-price" class="price main pudim">5,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -423,14 +423,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.desserts', '.dessert-6')" class="dessert dessert-6">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-6')" class="dessert dessert-6">
                         <img src="./Assets/açaí.jpg">
                         <div>
-                            <h2>Açaí</h2>
+                            <h2 data-test="item-name">Açaí</h2>
                             <p class="description">500ml de pura alegria</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">15,90</p>
+                                    <p data-test="item-price" class="price main pudim">15,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -441,14 +441,14 @@
                         </div>
                     </div>
 
-                    <div onclick="select('.desserts', '.dessert-7')" class="dessert dessert-7">
+                    <div data-test="dessert" onclick="select('.desserts', '.dessert-7')" class="dessert dessert-7">
                         <img src="./Assets/mousse_de_limao_com_suco_tang_4510_600.jpg">
                         <div>
-                            <h2>Mousse de Limão</h2>
+                            <h2 data-test="item-name">Mousse de Limão</h2>
                             <p class="description">Obra-Prima divina</p>
                             <div class="price-verify">
                                 <div class="price display">R$
-                                    <p class="price main pudim">13,90</p>
+                                    <p data-test="item-price"    class="price main pudim">13,90</p>
                                 </div>
                                 
                                 <div class="check">
@@ -467,7 +467,7 @@
         </div>
 
         <div class="confirm-ordered">
-            <button  onclick="click_button()" class="button" disabled><p class="text_button">Selecione os 3 itens <br>
+            <button data-test="order-btn" onclick="click_button()" class="button" disabled><p class="text_button">Selecione os 3 itens <br>
                 para fechar o pedido</p></button>
         </div>
     </div>

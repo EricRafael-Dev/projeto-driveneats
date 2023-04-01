@@ -47,8 +47,14 @@ img{
 .close-window{
     width: 45px;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 15px;
+}
+.close-window img{
+    width: 55px;
+}
+.close-window:hover{
+    cursor: pointer;
 }
 
 .window-confirm{
@@ -98,7 +104,7 @@ img{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
 }
 
 .all-right-confirm{
