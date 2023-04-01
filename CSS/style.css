@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 body{
     background-color: #E5E5E5;
+    position: relative;
 }
 
 h1{
@@ -15,8 +19,15 @@ img{
     border-radius: 4px;
 }
 
+
+
+
+
+
+
 .all-content{
     position: absolute;
+    
 }
 
 .top-menu{
@@ -26,6 +37,7 @@ img{
     background-color: #CF2B2B;
     width: 414px;
     height: 92px;
+    z-index: 1;
 }
 .name-logo{
     padding: 10px;
@@ -46,19 +58,22 @@ img{
     font-size: 26px;
 }
 
-.choices-of-foods{
+.foods{
     display: flex;
     width: 400px;
     overflow-x: auto;
     margin-top: 20px;
 }
 .food{
+    cursor: pointer;
     background-color: #FFFFFF;
     display:block;
-    padding: 15px;
+    padding: 5px 10px;
     border-radius: 9px;
-    width: 144px;
+    width: 184px;
     margin-right: 15px;
+    border: 5px solid #FFFFFF;
+    position: relative;
 }
 .food h2{
     color: #333333;
@@ -72,6 +87,24 @@ img{
     font-size: 15px;
     font-weight: 300;
     margin-top: 10px;
+    line-height: 18px;
+}
+.price-verify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.verify{
+    width: 22px;
+}
+.check{
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+    display: none;
+}
+.selection-check{
+    display: block;
 }
 .price{
     font-family: 'Roboto', sans-serif;
@@ -83,7 +116,7 @@ img{
 .main-drink{
     margin-top: 30px;
 }
-.choices-of-drinks{
+.drinks{
     display: flex;
     width: 394px;
     overflow-x: auto;
@@ -91,13 +124,18 @@ img{
 
 }
 .drink{
+    cursor: pointer;
     background-color: #FFFFFF;
     display:block;
-    padding: 15px;
+    padding: 5px 10px;
     border-radius: 9px;
-    width: 144px;
+    width: 184px;
     margin-right: 15px;
+    border: 5px solid #FFFFFF;
+    position: relative;
+
 }
+
 .drink h2{
     color: #333333;
     font-weight: 700;
@@ -108,7 +146,7 @@ img{
 .main-dessert{
     margin-top: 30px;
 }
-.choices-of-dessert{
+.desserts{
     display: flex;
     width: 394px;
     overflow-x: auto;
@@ -116,13 +154,18 @@ img{
 
 }
 .dessert{
+    cursor: pointer;
     background-color: #FFFFFF;
     display:block;
-    padding: 15px;
+    padding: 5px 10px;
     border-radius: 9px;
-    width: 144px;
+    width: 184px;
     margin-right: 15px;
+    border: 5px solid #FFFFFF;
+    position: relative;
+
 }
+
 .dessert h2{
     color: #333333;
     font-weight: 700;
@@ -141,13 +184,31 @@ img{
     bottom: 0;
     left: 0;
 }
-button{
+.button{
     color: #FFFFFF;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-color: #CBCBCB;
     height: 60px;
+    width: 365px;
     border-radius: 50px;
     border: none;
+}
+
+
+.confirm{
+    cursor: pointer;
+    background-color: #32B72F;
+}
+
+.confirm:hover{
+    background-color: #6bce6a;
+}
+.confirm:active{
+    background-color:#478f45;
+}
+
+.selected{
+    border-color: #32B72F;
 }
