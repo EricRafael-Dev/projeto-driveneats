@@ -108,7 +108,9 @@ function click_button (){
 
 
     const totality = value_food + value_drink + value_dessert;
-    var total = parseFloat(totality).toFixed(2)
+    var total_value = parseFloat(totality).toFixed(2)
+    var total = total_value.toString().replace(".", ",")
+
     
     const value_total = document.querySelector(".total-div .total-price")
     value_total.textContent = "R$ " + total;

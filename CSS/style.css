@@ -17,6 +17,8 @@ h2{
 img{
     margin-top: 5px;
     border-radius: 4px;
+    width: 144px;
+    height: 87px;
 }
 
 
@@ -61,6 +63,7 @@ img{
     align-items: center;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .title-order{
@@ -94,7 +97,8 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: absolute;
+    bottom: 10px;
 }
 
 .all-right-confirm{
@@ -140,6 +144,7 @@ img{
     width: 414px;
     height: 92px;
     z-index: 1;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
 }
 .name-logo{
     padding: 10px;
@@ -164,7 +169,8 @@ img{
     display: flex;
     width: 400px;
     overflow-x: auto;
-    margin-top: 20px;
+    overflow-y: hidden;
+    padding-top: 20px;
 }
 .food{
     cursor: pointer;
@@ -173,9 +179,12 @@ img{
     padding: 5px 10px;
     border-radius: 9px;
     width: 184px;
+    height: 216px;
     margin-right: 15px;
     border: 5px solid #FFFFFF;
     position: relative;
+    box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.1);
+
 }
 .food h2{
     color: #333333;
@@ -188,8 +197,8 @@ img{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
-    margin-top: 10px;
-    line-height: 18px;
+    margin-top: 7px;
+    line-height: 17px;
 }
 
 .display{
@@ -201,8 +210,13 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    bottom: 5px;
 }
 .verify{
+    position: absolute;
+    bottom: -36px;
+    left: 75px;
     width: 22px;
 }
 .check{
@@ -227,7 +241,8 @@ img{
     display: flex;
     width: 394px;
     overflow-x: auto;
-    margin-top: 20px;
+    overflow-y: hidden;
+    padding-top: 20px;
 
 }
 .drink{
@@ -237,9 +252,11 @@ img{
     padding: 5px 10px;
     border-radius: 9px;
     width: 184px;
+    height: 195px;
     margin-right: 15px;
     border: 5px solid #FFFFFF;
     position: relative;
+    box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -250,6 +267,13 @@ img{
     margin-top: 10px;
 }
 
+.verify-drink{
+    position: absolute;
+    bottom: -37px;
+    left: 84px;
+    width: 22px;
+}
+
 .main-dessert{
     margin-top: 30px;
 }
@@ -257,7 +281,8 @@ img{
     display: flex;
     width: 394px;
     overflow-x: auto;
-    margin-top: 20px;
+    overflow-y: hidden;
+    padding-top: 20px;
 
 }
 .dessert{
@@ -267,9 +292,11 @@ img{
     padding: 5px 10px;
     border-radius: 9px;
     width: 184px;
+    height: 205px;
     margin-right: 15px;
     border: 5px solid #FFFFFF;
     position: relative;
+    box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.1);
 
 }
 
