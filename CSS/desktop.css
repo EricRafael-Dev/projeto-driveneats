@@ -1,0 +1,17 @@
+@media (min-width:414px) {
+    .all-content{
+        width: 100%;
+    }
+    .top-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .foods, .drinks, .desserts{
+        width: 100%;
+
+    }
+    .confirm-ordered{
+        width: 100%;
+    }
+}

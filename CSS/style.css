@@ -178,8 +178,8 @@ img{
     display:block;
     padding: 5px 10px;
     border-radius: 9px;
-    width: 184px;
-    height: 216px;
+    width: 174px;
+    height: 220px;
     margin-right: 15px;
     border: 5px solid #FFFFFF;
     position: relative;
@@ -251,8 +251,8 @@ img{
     display:block;
     padding: 5px 10px;
     border-radius: 9px;
-    width: 184px;
-    height: 195px;
+    width: 174px;
+    height: 200px;
     margin-right: 15px;
     border: 5px solid #FFFFFF;
     position: relative;
@@ -291,7 +291,7 @@ img{
     display:block;
     padding: 5px 10px;
     border-radius: 9px;
-    width: 184px;
+    width: 174px;
     height: 205px;
     margin-right: 15px;
     border: 5px solid #FFFFFF;
@@ -346,3 +346,4 @@ img{
 .selected{
     border-color: #32B72F;
 }
+
