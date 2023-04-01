@@ -12,8 +12,54 @@
     <title>DrivenEats</title>
 </head>
 <body>
-    
-    <div class="all-content">
+    <div class="finish-order">
+        <div class="align">
+            <div class="confirm-order">
+                <div class="close-window">
+                    <img src="./Assets/close-outline.svg">
+                </div>
+                <div class="window-confirm">
+                    <div class="title-order">
+                        <h1>Confirme seu pedido</h1>
+                    </div>
+                    <div class="content-order">
+
+                        <div class="content-align content-food">
+                            <div class="item-food-name"></div>
+                            <div class="item-food-price"></div>
+                        </div>
+
+                        <div class="content-align content-drink">
+                            <div class="item-drink-name"></div>
+                            <div class="item-drink-price"></div>
+                        </div>
+
+                        <div class="content-align content-dessert">
+                            <div class="item-dessert-name"></div>
+                            <div class="item-dessert-price"></div>
+                        </div>
+
+                        <div class="content-align total-div">
+                            <div class="total-name">TOTAL</div>
+                            <div class="total-price"><p></p></div>
+                        </div>
+
+                    </div>
+
+                    <div class="options">
+                        
+                        <button onclick="set_values()" class="all-right-confirm">Tudo certo, pode pedir!</button>
+
+                        <div onclick="click_button()" class="cancel">
+                            Cancelar
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="all-content">s
 
         <div class="top-menu">
             <div class="name-logo">
@@ -33,8 +79,9 @@
                             <h2>Frango Yin Yang</h2>
                             <p class="description">Um pouco de batata, um pouco de salada</p>
                             <div class="price-verify">
-                                <p class="price main">R$ 14,90</p>
-
+                                <div class="price display">R$
+                                    <p class="price main">14,90</p>
+                                </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
                                 </div>
@@ -49,8 +96,9 @@
                             <h2>Frango Yin Yang</h2>
                             <p class="description">Um pouco de batata, um pouco de salada</p>
                             <div class="price-verify">
-                                <p class="price main">R$ 14,90</p>
-
+                                <div class="price display">R$
+                                    <p class="price main">14,90</p>
+                                </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
                                 </div>
@@ -65,8 +113,9 @@
                             <h2>Frango Yin Yang</h2>
                             <p class="description">Um pouco de batata, um pouco de salada</p>
                             <div class="price-verify">
-                                <p class="price main">R$ 14,90</p>
-
+                                <div class="price display">R$
+                                    <p class="price main">14,90</p>
+                                </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
                                 </div>
@@ -81,8 +130,9 @@
                             <h2>Frango Yin Yang</h2>
                             <p class="description">Um pouco de batata, um pouco de salada</p>
                             <div class="price-verify">
-                                <p class="price main">R$ 14,90</p>
-
+                                <div class="price display">R$
+                                    <p class="price main">14,90</p>
+                                </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
                                 </div>
@@ -97,8 +147,9 @@
                             <h2>Frango Yin Yang</h2>
                             <p class="description">Um pouco de batata, um pouco de salada</p>
                             <div class="price-verify">
-                                <p class="price main">R$ 14,90</p>
-
+                                <div class="price display">R$
+                                    <p class="price main">14,90</p>
+                                </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
                                 </div>
@@ -120,8 +171,9 @@
                             <h2>Coquinha gelada</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
-                                <p class="price coca">R$ 4,90</p>
-                            
+                                <div class="price display">R$
+                                    <p class="price main coca">4,90</p>
+                                </div>
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
                                 </div>
@@ -136,7 +188,9 @@
                             <h2>Coquinha gelada</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
-                                <p class="price coca">R$ 4,90</p>
+                                <div class="price display">R$
+                                    <p class="price main coca">4,90</p>
+                                </div>
                             
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -153,7 +207,9 @@
                             <h2>Coquinha gelada</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
-                                <p class="price coca">R$ 4,90</p>
+                                <div class="price display">R$
+                                    <p class="price main coca">4,90</p>
+                                </div>
                             
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -169,7 +225,9 @@
                             <h2>Coquinha gelada</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
-                                <p class="price coca">R$ 4,90</p>
+                                <div class="price display">R$
+                                    <p class="price main coca">4,90</p>
+                                </div>
                             
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -185,7 +243,9 @@
                             <h2>Coquinha gelada</h2>
                             <p class="description">Lata 350ml</p>
                             <div class="price-verify">
-                                <p class="price coca">R$ 4,90</p>
+                                <div class="price display">R$
+                                    <p class="price main coca">4,90</p>
+                                </div>
                             
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -208,7 +268,9 @@
                             <h2>Pudim</h2>
                             <p class="description">Apenas pudim</p>
                             <div class="price-verify">
-                                <p class="price pudim">R$ 7,90</p>
+                                <div class="price display">R$
+                                    <p class="price main pudim">7,90</p>
+                                </div>
                                 
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -224,7 +286,9 @@
                             <h2>Pudim</h2>
                             <p class="description">Apenas pudim</p>
                             <div class="price-verify">
-                                <p class="price pudim">R$ 7,90</p>
+                                <div class="price display">R$
+                                    <p class="price main pudim">7,90</p>
+                                </div>
                                 
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -240,7 +304,9 @@
                             <h2>Pudim</h2>
                             <p class="description">Apenas pudim</p>
                             <div class="price-verify">
-                                <p class="price pudim">R$ 7,90</p>
+                                <div class="price display">R$
+                                    <p class="price main pudim">7,90</p>
+                                </div>
                                 
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -256,7 +322,9 @@
                             <h2>Pudim</h2>
                             <p class="description">Apenas pudim</p>
                             <div class="price-verify">
-                                <p class="price pudim">R$ 7,90</p>
+                                <div class="price display">R$
+                                    <p class="price main pudim">7,90</p>
+                                </div>
                                 
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
@@ -272,7 +340,9 @@
                             <h2>Pudim</h2>
                             <p class="description">Apenas pudim</p>
                             <div class="price-verify">
-                                <p class="price pudim">R$ 7,90</p>
+                                <div class="price display">R$
+                                    <p class="price main pudim">7,90</p>
+                                </div>
                                 
                                 <div class="check">
                                     <img src="./Assets/checkmark-circle-outline.svg" class="verify">
